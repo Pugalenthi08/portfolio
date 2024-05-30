@@ -1,0 +1,724 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #49243E;
+    --secondary-color: #DBAFA0;
+    --teritary-color: #BB8493;
+    --white-color: #FFFFFF;
+    --primary-bg: #49243E;
+    --secondary-bg: #FFFAFE;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 54px;
+
+}
+
+h3 {
+    font-size: 24px;
+
+}
+
+/* -------------------------------------- RESET DEFAULT VALUES ENDS HERE  ------------------------------- */
+
+/* --------------------------------------- NAV SECTION STARTS HERE ----------------------------------------- */
+
+.navbar a {
+    color: var(--primary-bg);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 22px;
+}
+
+
+.hireMe {
+    padding: 8px 20px;
+    border: none;
+    margin-right: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    background-color: var(--primary-bg);
+
+}
+
+.hireMe a,
+.hireMeinsideNav a {
+    color: var(--secondary-color);
+}
+
+
+.logo {
+    font-size: 25px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ------------------------------------------ LIGHT MODE STARTS HERE ---------------------------------- */
+
+
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    top: 4px;
+    left: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+
+input:checked+.slider {
+    border: 2px solid white;
+    background-color: var(--secondary-color);
+
+    position: absolute;
+
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.dark-mode input:checked+.slider:before {
+    background-color: var(--primary-bg);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+}
+
+.dark-mode .icon-wrapper {
+    left: calc(100% - 26px);
+}
+
+.icon {
+    display: none;
+}
+
+/* ------------------------------------------ LIGHT MODE ENDS HERE ---------------------------------- */
+
+
+/* -------------------------------------TOP MENU BAR STARTS HERE ------------------------------------- */
+.navIcon {
+
+    display: none;
+    padding: 0px 20px;
+}
+
+.show {
+    display: block;
+
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-bg);
+    margin-block: 5px;
+    transform-origin: left;
+    animation: menuBtn 400ms ease-in-out alternate infinite;
+}
+
+@keyframes menuBtn {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0.5);
+    }
+}
+
+.bar2 {
+    animation-delay: 0.8s;
+}
+
+.bar3 {
+    animation-delay: 0.5s;
+}
+
+.hireMeinsideNav {
+
+    display: none;
+}
+
+
+
+.navList {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    background-color: var(--secondary-color);
+    top: 50px;
+    right: 0;
+    padding: 20px 50px;
+    width: 300px;
+
+}
+
+.show {
+
+    display: block !important;
+
+}
+
+/* -------------------------------------TOP MENU BAR ENDS HERE ------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* ------------------------------------BANNER 1 ENDS HERE  ------------------------------------------- */
+
+
+.bannerSection1 {
+    padding: 100px 0px 50px;
+    background-color: var(--primary-bg);
+    color: var(--secondary-color);
+
+}
+
+.bannerSection1 p {
+    color: var(--white-color);
+}
+
+.downloadResume {
+    padding: 15px;
+    font-weight: 700;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+    border: none;
+}
+
+.whatsapp,
+.gitBtn,
+.linkedIn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-bg);
+    color: var(--primary-color);
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.introSec {
+    /* height: 400px; */
+}
+
+/* ------------------------------------BANNER 1 ENDS HERE  ------------------------------------------- */
+
+
+
+
+/*----------------------------------- About Us Section STARTS HERE -------------------------------------------------- */
+
+.aboutUsSection {
+    padding: 50px 0px 50px;
+}
+
+.aboutUsSection h1,
+h2 {
+    font-weight: bold;
+    color: var(--secondary-color);
+
+}
+
+.highlightText {
+    color: var(--teritary-color);
+}
+
+.highlightHeading {
+    color: var(--primary-color);
+}
+
+.aboutUsSection p {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+
+/*----------------------------------- About Us Section ENDS HERE ----------------------------------------- */
+
+
+
+/* -----------------------------------LEARNING AND CAREER TRACK START HERE ------------------------------- */
+
+
+.learningTrack {
+    padding: 50px 0px 50px;
+    background-color: var(--primary-bg);
+    color: var(--secondary-color);
+
+}
+
+
+.nav-tabs .nav-link {
+
+    border: none;
+    /* background-color: var(--secondary-color); */
+    border-radius: 100px;
+}
+
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+    /* background-color: var(--bs-nav-tabs-link-active-bg); */
+    background-color: var(--teritary-color) !important;
+    border: none;
+}
+
+
+.nav-tabs {
+    border: none;
+    /* --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) var(--bs-body-bg); */
+    /* border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color); */
+}
+
+
+.nav-link {
+
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--secondary-bg)
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: 0
+}
+
+.nav-tabs {
+
+    background: var(--secondary-color);
+    border-radius: 100px;
+    width: fit-content;
+}
+
+
+
+.trackCardIcon {
+    display: flex;
+    align-items: center;
+}
+
+.rightIcon {
+    color: var(--secondary-color);
+    /* border: 1px solid var(--secondary-bg); */
+    font-size: 24px;
+    display: inline-block;
+}
+
+.bartrackConnect {
+    height: 1.5px;
+    width: 25px;
+    background-color: var(--secondary-bg);
+
+}
+
+.ionicon-stroke-width {
+    stroke-width: 10px;
+}
+
+.trackCard {
+    height: fit-content;
+    width: 580px;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* -----------------------------------LEARNING AND CAREER TRACK ENDS HERE ------------------------------- */
+
+
+
+/* -----------------------------------PROFESSIONAL SKILLS HERE ------------------------------- */
+
+
+
+
+.skill-container {
+    max-width: 600px;
+    /* margin: 50px auto; */
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: var(--teritary-color);
+    height: 20px;
+    border-radius: 50PX;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-level {
+    background-color: var(--primary-color);
+    height: 100%;
+    border-radius: 50PX;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: fillWidth 2s ease-out forwards;
+    animation-play-state: paused;
+}
+
+.professionalSkills {
+    padding: 50px 0px 50px;
+}
+
+.professionalSkills h2 {
+    color: var(--primary-color);
+}
+
+@keyframes fillWidth {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: var(--skill-level);
+    }
+}
+
+/* -----------------------------------PROFESSIONAL SKILLS ENDS HERE ------------------------------- */
+
+/* -----------------------------------PROJECT GALLERY START HERE ------------------------------- */
+
+.projectGallerySection h2 {
+    color: var(--primary-color);
+}
+
+.projectTitle {
+    font-size: var(--font-size-20);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.exploreFurther a {
+    color: var(--teritary-color);
+    text-decoration: none;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .80;
+    color: var(--primary-color);
+
+}
+
+.slick-dots li button:before {
+
+
+    opacity: .60;
+    color: var(--secondary-color);
+
+
+
+}
+
+.projectGallerySection {
+    padding: 50px 0px 0px;
+}
+
+/* -----------------------------------PROJECT GALLERY END HERE ------------------------------- */
+
+.form-control {
+
+    /* padding: .375rem .75rem; */
+    /* font-size: 1rem; */
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--primary-color) !important;
+    padding: 16px;
+    /* background-color: var(--teritary-color); */
+
+    border-radius: 10PX;
+
+    border: none;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #49243E;
+}
+
+input::placeholder {
+    color: #49243E;
+}
+
+footer h2 {
+    color: var(--primary-bg);
+}
+
+footer {
+    padding: 50px 0px 0px;
+    background-color: var(--teritary-color);
+}
+
+textarea {
+    font-weight: 600;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+.form-control:focus {
+
+    /* background-color: var(--teritary-color); */
+    /* border-color: #86b7fe;*/
+
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0.2px 0.2px 4px var(--primary-color) !important;
+}
+
+textarea:focus-visible {
+    /* background-color: var(--teritary-color); */
+    box-shadow: 0.2px 0.2px 4px var(--primary-color) !important;
+    outline: 2px solid var(--primary-color);
+}
+
+input:focus-visible {
+    background-color: var(--teritary-color);
+    box-shadow: 1px 1px 10px var(--primary-bg);
+}
+
+.form-control:focus {
+
+    box-shadow: none;
+}
+
+
+.sendMsg {
+    background-color: var(--primary-color);
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    color: var(--secondary-bg);
+    border-radius: 10px;
+}
+
+/* --------------------------------------------- CONNECT WITH ME STARTS HERE  -------------------------------------- */
+
+
+
+/* --------------------------------------------- CONNECT WITH ME ENDS HERE-------------------------------------- */
+
+.aboutUsRight,
+.introSecleft,
+.careerLeftSec,
+.introSecRight,
+.aboutUsleft,
+.careerRightSec,
+.skillsRightSec,
+.skillsLeftSec,
+.projectGallerySection,
+.testimonial,
+.connectMeRightSec,
+.connectMeLeftSec {
+    display: none;
+}
+
+.animate-right {
+    display: block;
+    animation-name: animateFromright;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.animate-left {
+    display: block;
+    animation-name: animateFromLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes animateFromright {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes animateFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+
+/* PROJECT  Carosole  */
+
+.card {
+    background-color: antiquewhite;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 15px;
+    color: var(--primary-color);
+
+}
+
+.projectImg img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.projectContent {
+    background-color: bisque;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+}
+
+.projectOuterCard {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* PROJECT  Carosole  */
+
+
+
+/* TESTIMONIAL */
+
+.testimonial h2 {
+    color: var(--primary-color);
+}
+
+
+
+.testimonial {
+    padding: 50px 0px 0px 0px;
+}
+
+
+/* TESTIMONIAL */
+/* 
+.testimonialName {
+    color: #49243E;
+    font-weight: 600;
+} */
+
+/* MEDIA QUERIES */
