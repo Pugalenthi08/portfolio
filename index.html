@@ -47,7 +47,7 @@
 
     :root {
       --primary-color: #110A1F;
-      --seconday-color: #160D28;
+      --seconday-color: #130928;
       --headerBg-color: #8750F7;
     }
 
@@ -58,6 +58,15 @@
     h2 {
       font-size: 48px;
     }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
 
 
 
@@ -269,6 +278,7 @@
 
     .carreerCont p {
       color: var(--primary-color);
+      color: white;
     }
 
     .container-fluid {
@@ -278,6 +288,7 @@
     .FirstbodySection {
       background-color: var(--primary-color);
       color: white;
+      padding: 15px;
     }
 
     .FirstbodySection span {
@@ -417,15 +428,43 @@
       justify-content: space-evenly;
       align-items: center;
     }
+
     .form-control:focus {
-    
-    
-    border-color: #47db00 !important;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgb(0 247 80 / 25%);
-}
 
 
+      border-color: rgb(11, 161, 224) !important;
+      outline: 0;
+      box-shadow: 0 0 0 .25rem rgba(4, 111, 234, 0.25);
+    }
+
+
+
+    .contentCarrerr {
+
+      justify-content: center;
+      align-items: center;
+
+    }
+
+
+
+
+    @media only screen and (max-width:992px) {
+      h2 {
+        font-size: 42px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+
+
+    }
 
 
 
@@ -436,19 +475,21 @@
 
     @media only screen and (max-width:768px) {
       h2 {
-        font-size: 37px;
+        font-size: 36px;
       }
 
-      .ThirdBodySectio h2 {
-        font-size: 21px;
+      h3 {
+        font-size: 24px !important;
       }
 
-      .name h6  {
-        line-height: 20px !important;
+
+
+      .name h6 {
+        line-height: 23px !important;
       }
 
       .home h6 {
-        line-height: 20px;
+        line-height: 23px;
       }
 
       .shape {
@@ -463,7 +504,16 @@
 
 
 
+
+
     @media only screen and (max-width:576px) {
+      h2 {
+        font-size: 30px;
+      }
+
+      .img {
+        padding: 0px !important;
+      }
 
 
       .nav-tabs .nav-link {
@@ -474,6 +524,44 @@
       }
 
 
+
+
+      /* @media only screen and (max-width:576px) {
+        h2{
+          font-size: 24px;
+        } */
+
+    }
+
+
+
+    @media only screen and (max-width:388px) {
+      .carreerCont h3 {
+        font-size: 18px;
+        /* padding-left: 10px; */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+      }
+
+      .carreerCont p {
+        font-size: 11px;
+        color: white;
+      }
+
+      .icon {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+
+      .button {
+
+        width: 500px !important;
+        height: 42px;
+
+      }
     }
   </style>
 
@@ -537,39 +625,39 @@
   <section class="FirstbodySection">
     <div class="container">
 
-      <div class="row ">
+      <div class="row g-2">
 
-        <div class="col-md-6 order-md-2 p-3 d-flex justify-content-center">
+        <div class="col-md-6 order-md-2">
 
-          <img src="./images/new.svg" alt="" class="img-fluid shape">
+          <img src="./images/Ellipse 2.png" alt="" class="img-fluid">
 
 
 
 
         </div>
 
-        <div class="col-md-6  p-lg-5 p-4 order-md-1">
-          <div class="home">
-            <h3>Hello it's Me</h3>
-            <h2>Pugalenthi R</h2>
-            <h4>And i'm a <span>Ui/Ux Designer </span>and <span>Front End Developer</span></h4>
-            <br>
-            <h6><b>Creative UI/UX Designer</b> with a passion for crafting intuitive and engaging user experiences.
-              <b>Skilled
-                Front-End Developer </b>dedicated to transforming designs into seamless and responsive websites.
-              Committed to
-              enhancing user satisfaction through <b>innovative design and development</b>
-            </h6>
-            <br>
-            <div class="icon">
-              <button type="button" class="button">Downlode CV <img src="./images/download.svg" alt=""></button>
-              <div class="">
-                <button type="button" class="button1"><img src="./images/envelope.svg" alt=""></button>
-                <button type="button" class="button1"><img src="./images/whatsapp (1).svg" alt=""></button>
-                <button type="button" class="button1"><img src="./images/behance.svg" alt=""></button>
-                <button type="button" class="button1"><img src="./images/linkedin.svg" alt=""></button>
-              </div>
+        <div class="col-md-6  p-2 order-md-1">
+          <!-- <div class="home"> -->
+          <h3>Hello it's Me</h3>
+          <h2>Pugalenthi R</h2>
+          <h4>And i'm a <span>Ui/Ux Designer </span>and <span>Front End Developer</span></h4>
+          <br>
+          <h6><b>Creative UI/UX Designer</b> with a passion for crafting intuitive and engaging user experiences.
+            <b>Skilled
+              Front-End Developer </b>dedicated to transforming designs into seamless and responsive websites.
+            Committed to
+            enhancing user satisfaction through <b>innovative design and development</b>
+          </h6>
+          <br>
+          <div class="icon">
+            <button type="button" class="button">Downlode CV <img src="./images/download.svg" alt=""></button>
+            <div class="">
+              <button type="button" class="button1"><img src="./images/envelope.svg" alt=""></button>
+              <button type="button" class="button1"><img src="./images/whatsapp (1).svg" alt=""></button>
+              <button type="button" class="button1"><img src="./images/behance.svg" alt=""></button>
+              <button type="button" class="button1"><img src="./images/linkedin.svg" alt=""></button>
             </div>
+            <!-- </div> -->
 
           </div>
         </div>
@@ -615,7 +703,7 @@
           <div class="col-md-6 p-0 order-md-1">
             <div>
               <div class="images">
-                <img src="./images/new.svg" alt="" class="img-fluid">
+                <img src="./images/Ellipse 2.png" alt="" class="img-fluid">
 
               </div>
               <!-- <img src="./images and logo/blob.svg" alt=""> -->
@@ -709,12 +797,12 @@
             tabindex="0">
             <div class="row">
               <div class="col-lg-6 p-0">
-                <img src="./images/new.svg " class="img-fluid p-5" alt="">
+                <img src="./images/course.png" class="img-fluid p-5 img" alt="">
               </div>
               <div class="col-lg-6 p-0 ">
                 <div class="carreerCont d-flex justify-content-center align-items-center">
                   <div class="contentCarrerr">
-                    <h3>WEB DEVELOPMENT</h3>
+                    <h3>Front-End DEVELOPMENT</h3>
                     <p>Image Creative Education,Coimbatore</p>
                   </div>
                 </div>
@@ -741,9 +829,9 @@
 
             <div class="row">
               <div class="col-lg-6 p-0">
-                <img src="./images/new.svg " class="img-fluid p-5" alt="">
+                <img src="./images/college.png " class="img-fluid p-5 img" alt="">
               </div>
-              <div class="col-lg-6 p-0 ">
+              <div class=" col-lg-6 p-0 ">
                 <div class="carreerCont d-flex justify-content-center align-items-center">
                   <div class="contentCarrerr">
                     <h3>BE COMPUTER SCIENCE</h3>
@@ -796,14 +884,14 @@
                       <span class="skill-name">HTML</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">90%</span>
+                      <span class="skill-name">70%</span>
                     </div>
                   </div>
                   <div class="skill-bar">
                     <!-- <div class="skill-level" style="--skill-level: 90%;"></div> -->
 
                     <div class="innerBox"
-                      style="background-color: white; width:80%; height: 20px; border-radius: 50px;">
+                      style="background-color: white; width:70%; height: 20px; border-radius: 50px;">
                     </div>
                   </div>
                 </div>
@@ -816,12 +904,12 @@
                       <span class="skill-name">CSS</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">80%</span>
+                      <span class="skill-name">86%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
-                    <div class="box" style="background-color: white ; height: 20px; width: 80%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 86%; border-radius: 50px;">
                     </div>
 
                   </div>
@@ -833,13 +921,13 @@
                       <span class="skill-name">JavaScript</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">80%</span>
+                      <span class="skill-name">82%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
                     <!-- <div class="skill-level" style="--skill-level: 80%;"></div> -->
-                    <div class="box" style="background-color: white ; height: 20px; width: 80%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 82%; border-radius: 50px;">
                     </div>
 
                   </div>
@@ -848,16 +936,16 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">Jquery</span>
+                      <span class="skill-name">React JS</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">80%</span>
+                      <span class="skill-name">70%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
                     <!-- <div class="skill-level" style="--skill-level: 80%;"></div> -->
-                    <div class="box" style="background-color: white ; height: 20px; width: 80%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 70%; border-radius: 50px;">
                     </div>
 
                   </div>
@@ -866,16 +954,16 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">REACT JS</span>
+                      <span class="skill-name">Python</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">75%</span>
+                      <span class="skill-name">68%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
                     <!-- <div class="skill-level" style="--skill-level: 75%;"></div> -->
-                    <div class="box" style="background-color: white ; height: 20px; width: 75%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 68%; border-radius: 50px;">
                     </div>
 
                   </div>
@@ -891,14 +979,14 @@
                 <div class="skill">
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">ANGULAR</span>
+                      <span class="skill-name">Figma</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">75%</span>
+                      <span class="skill-name">76%</span>
                     </div>
                   </div>
                   <div class="skill-bar">
-                    <div class="box" style="background-color: white ; height: 20px; width: 75%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 76%; border-radius: 50px;">
                     </div>
 
                     <!-- <div class="skill-level" style="--skill-level: 75%;"></div> -->
@@ -908,15 +996,15 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">PHP</span>
+                      <span class="skill-name">PhotoShop</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">70%</span>
+                      <span class="skill-name">82%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
-                    <div class="box" style="background-color: white ; height: 20px; width: 70%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 82%; border-radius: 50px;">
                     </div>
 
                     <!-- <div class="skill-level" style="--skill-level: 70%; ;"></div> -->
@@ -926,16 +1014,16 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">MYSQL</span>
+                      <span class="skill-name">Illustration</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">70%</span>
+                      <span class="skill-name">84%</span>
                     </div>
                   </div>
 
 
                   <div class="skill-bar">
-                    <div class="box" style="background-color: white ; height: 20px; width: 70%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 84%; border-radius: 50px;">
                     </div>
 
                     <!-- <div class="skill-level" style="--skill-level: 70%;"></div> -->
@@ -945,15 +1033,15 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">GIT GITHUB & GITLAB</span>
+                      <span class="skill-name">Adobe XD</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">80%</span>
+                      <span class="skill-name">70%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
-                    <div class="box" style="background-color: white ; height: 20px; width: 80%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 70%; border-radius: 50px;">
                     </div>
 
                     <!-- <div class="skill-level" style="--skill-level: 80%;"></div> -->
@@ -963,15 +1051,15 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">FIGMA</span>
+                      <span class="skill-name">Indesign</span>
                     </div>
                     <div class="col-3 text-end">
-                      <span class="skill-name">70%</span>
+                      <span class="skill-name">68%</span>
                     </div>
                   </div>
 
                   <div class="skill-bar">
-                    <div class="box" style="background-color: white ; height: 20px; width: 70%; border-radius: 50px;">
+                    <div class="box" style="background-color: white ; height: 20px; width: 68%; border-radius: 50px;">
                     </div>
 
                     <!-- <div class="skill-level" style="--skill-level: 70%;"></div> -->
@@ -1049,7 +1137,7 @@
             <br>
             <!-- <p>kjshybyxjhbjhsxbxsbns</p> -->
             <div class="innerdiv">
-              <div class="row  g-3 mb-3">
+              <div class="row  g-3 mb-3 pt-md-5">
                 <div class="col-md-6">
                   <input type="text" class="form-control" placeholder="Enter Your Name">
                 </div>
