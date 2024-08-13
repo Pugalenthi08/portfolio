@@ -34,6 +34,11 @@
 
   <!-- slick link end  -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
 
 
 
@@ -56,15 +61,24 @@
 
 
     h2 {
+      font-family: "EB Garamond", serif;
+      font-weight: 800;
       font-size: 48px;
     }
 
     h3 {
+      font-family: "EB Garamond", serif;
       font-size: 30px;
     }
 
     h4 {
+      font-family: "Mulish", sans-serif;
       font-size: 22px;
+    }
+
+    p {
+      font-family: "Mulish", sans-serif;
+
     }
 
     .Menuparent {
@@ -496,7 +510,7 @@
     }
 
     .aboutimg {
-      filter: drop-shadow(0px 0px 70px #8750f7);
+      filter: drop-shadow(0px 0px 30px #8750f7);
     }
 
     .introImg {
@@ -543,10 +557,16 @@
       color: white;
     }
 
-    .iconss a b {
+    .iconss a  {
+      
       text-decoration: none;
-      color: white;
+      color: rgb(0, 0, 0);
       /* background-color: blue; */
+    }
+    .iconss a b {
+      
+      
+      /* background-color: rgb(255, 255, 255); */
     }
 
     .iconss img {
@@ -567,7 +587,7 @@
 
     .skill-bar {
       width: 100%;
-      background-color: var(--headerBg-color);
+      background-color: white !important;
       height: 17px;
       border-radius: 50PX;
       position: relative;
@@ -577,7 +597,7 @@
 
     .skill-level {
       height: 100%;
-      background-color: white !important;
+      background-color: var(--headerBg-color);
       border-radius: 50px;
       position: absolute;
       left: 0;
@@ -595,9 +615,34 @@
         width: var(--skill-level);
       }
     }
-    body{
+
+    body {
       overflow-x: hidden;
     }
+
+    img.iconsSize {
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+    }
+
+    .text-end {
+      text-align: right !important;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .content {
+      line-height: 30px;
+    }
+
+    .imgs {
+      filter: drop-shadow(0px 0px 90px #8750f7);
+    }
+
+
+
 
 
 
@@ -678,6 +723,7 @@
 
       .img {
         padding: 0px !important;
+
       }
 
 
@@ -793,14 +839,13 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <button class="hireMe"> <a href="mailto:pugalenthi245@gmail.com ">Hire Me</a></button>
+                <button class="hireMe"> <a href="mailto:pugalenthi00809@gmail.com">Hire Me</a></button>
                 <!-- <a href="mailto:example@example.com">Send Email</a> -->
+
 
               </li>
             </ul>
 
-            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
           </form>
         </div>
       </div>
@@ -825,11 +870,12 @@
 
         <div class="col-md-6  p-2 order-md-1">
           <!-- <div class="home"> -->
-          <h3>Hello it's Me</h3>
+          <h4>Hello it's Me</h4>
           <h2 class="gif">Pugalenthi R</h2>
-          <h4>And i'm a <span>Ui/Ux Designer </span>and <span>Front End Developer</span></h4>
+          <h4>And i'm a <span><b>Ui/Ux Designer </b></span>and <span><b>Front End Developer</b></span></h4>
           <br>
-          <h6><b>Creative UI/UX Designer</b> with a passion for crafting intuitive and engaging user experiences.
+          <h6 class="content"><b>Creative UI/UX Designer</b> with a passion for crafting intuitive and engaging user
+            experiences.
             <b>Skilled
               Front-End Developer </b>dedicated to transforming designs into seamless and responsive websites.
             Committed to
@@ -837,7 +883,8 @@
           </h6>
           <br>
           <div class="icon">
-            <button type="button" class="button">Downlode CV <img src="./images/download.svg" alt=""></button>
+            <a download href="./images/Resume__1.pdf"><button type="button" class="button">Downlode CV <img
+                  src="./images/download.svg" alt=""></button></a>
             <div class="">
               <a href="mailto:pugalenthi245@gmail.com"><button type="button" class="button1"><img
                     src="./images/envelope.svg" alt=""></button></a>
@@ -848,7 +895,7 @@
               <a href="https://www.linkedin.com/mynetwork/grow/"><button type="button" class="button1"><img
                     src="./images/linkedin.svg" alt=""></button></a>
             </div>
-            <!-- </div> -->
+
 
           </div>
         </div>
@@ -892,7 +939,7 @@
         <div class="row ">
 
           <div class="col-md-6 p-0 order-md-1 d-flex justify-content-center align-items-center">
-            <img src="./images/Ellipse 2.png" alt="" class="img-fluid aboutimg">
+            <img src="./images/Webinar-pana.png" alt="" class="img-fluid aboutimg">
           </div>
 
 
@@ -964,7 +1011,7 @@
             tabindex="0">
             <div class="row">
               <div class="col-lg-6 p-0 d-flex justify-content-center align-items-center">
-                <img src="./images/Online learning-cuate.png" class="img-fluid p-5 img" alt="">
+                <img src="./images/certification.png" class="img-fluid p-5 imgs" alt="">
               </div>
               <div class="col-lg-6 p-0 ">
                 <div class="carreerCont d-flex justify-content-center align-items-center">
@@ -984,7 +1031,7 @@
                 </div>
                 <div class="carreerCont d-flex justify-content-center align-items-center">
                   <div class="contentCarrerr">
-                    <h3>GRAPHIC Designing</h3>
+                    <h3>Graphic Designing</h3>
                     <p>Image Creative Education,Coimbatore</p>
                   </div>
                 </div>
@@ -999,7 +1046,7 @@
 
             <div class="row">
               <div class="col-lg-6 p-0 d-flex justify-content-center align-items-center">
-                <img src="./images/graduation hats-rafiki.png" class="img-fluid p-5 img" alt="">
+                <img src="./images/education.png" class="img-fluid p-5 imgs" alt="">
               </div>
               <div class=" col-lg-6 p-0 ">
                 <div class="carreerCont d-flex justify-content-center align-items-center">
@@ -1052,7 +1099,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">HTML</span>
+                      <span class="skill-name"><img src="./images/logos--html-5.png" alt=""
+                          class="iconsSize">HTML</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">70%</span>
@@ -1061,8 +1109,7 @@
                   <div class="skill-bar">
                     <!-- <div class="skill-level" style="--skill-level: 90%;"></div> -->
 
-                    <div class="skill-level"
-                      style="--skill-level:70%">
+                    <div class="skill-level" style="--skill-level:70%">
                     </div>
                   </div>
                 </div>
@@ -1072,7 +1119,7 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">CSS</span>
+                      <span class="skill-name"><img src="./images/logos--css-3.png" alt="" class="iconsSize">CSS</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">86%</span>
@@ -1089,7 +1136,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">JavaScript</span>
+                      <span class="skill-name"><img src="./images/skill-icons--javascript.png" alt=""
+                          class="iconsSize">JavaScript</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">82%</span>
@@ -1107,7 +1155,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">React JS</span>
+                      <span class="skill-name"><img src="./images/vscode-icons--file-type-reactjs.png" alt=""
+                          class="iconsSize">React JS</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">70%</span>
@@ -1125,7 +1174,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">Python</span>
+                      <span class="skill-name"><img src="./images/devicon--python.png" alt=""
+                          class="iconsSize">Python</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">68%</span>
@@ -1135,7 +1185,7 @@
                   <div class="skill-bar">
                     <div class="skill-level" style="--skill-level: 68%;"></div>
                     <!-- <div class="box" style="--boxlevel:68%"> -->
-                    
+
 
                   </div>
                 </div>
@@ -1150,7 +1200,8 @@
                 <div class="skill">
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">Figma</span>
+                      <span class="skill-name"><img src="./images/skill-icons--figma-dark.png" alt=""
+                          class="iconsSize">Figma</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">76%</span>
@@ -1167,7 +1218,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">PhotoShop</span>
+                      <span class="skill-name"><img src="./images/skill-icons--photoshop.png" alt=""
+                          class="iconsSize">PhotoShop</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">82%</span>
@@ -1185,7 +1237,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">Illustration</span>
+                      <span class="skill-name"><img src="./images/skill-icons--illustrator.png" alt=""
+                          class="iconsSize">Illustration</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">84%</span>
@@ -1204,7 +1257,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">Adobe XD</span>
+                      <span class="skill-name"><img src="./images/devicon--xd.png" alt="" class="iconsSize">Adobe
+                        XD</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">70%</span>
@@ -1222,7 +1276,8 @@
 
                   <div class="row">
                     <div class="col-9 text-start">
-                      <span class="skill-name">Indesign</span>
+                      <span class="skill-name"><img src="./images/logos--adobe-indesign.png" alt=""
+                          class="iconsSize">Indesign</span>
                     </div>
                     <div class="col-3 text-end">
                       <span class="skill-name">68%</span>
@@ -1230,8 +1285,7 @@
                   </div>
 
                   <div class="skill-bar">
-                    <div class="skill-level"
-                      style="--skill-level:  68%;">
+                    <div class="skill-level" style="--skill-level:  68%;">
                     </div>
 
                     <!-- <div class="skill-level" style="--skill-level: 70%;"></div> -->
@@ -1248,7 +1302,7 @@
 
   <!-- Carosel Project   slick -->
   <section id="project" style="background-color: var(--primary-color);">
-    <h1 style="text-align: center; color: white;">My Projects..!</h1>
+    <h2 style="text-align: center; color: white;">My Projects..!</h2>
     <br>
 
 
@@ -1399,16 +1453,16 @@
       <div class="d-flex justify-content-center">
         <h2>Contact With <span>Me..! </span> </h2>
       </div>
-      <br><br>
+      <br>
       <div class="row">
 
         <div class="col-lg-6 ">
           <div>
             <h2>Let's <span>Work together....!</span></h2>
-            <br>
+
             <!-- <p>kjshybyxjhbjhsxbxsbns</p> -->
             <div class="innerdiv">
-              <div class="row  g-3 mb-3 pt-md-5">
+              <div class="row  g-3 mb-3">
                 <div class="col-md-6">
                   <input type="text" class="form-control" placeholder="Enter Your Name">
                 </div>
@@ -1568,9 +1622,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./script.js"></script>
+  <script src="./script.js"></script>
 
-    
+
   <script type="text/javascript">
     $(document).ready(function () {
 
